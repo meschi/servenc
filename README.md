@@ -3,6 +3,7 @@ This tool is a open source implementation of the ncserver written in python.
 
 ### Usage:
 `./serv.py #linux`
+
 `python2.7 serv.py #windows`
 
 The program will print a list of serial ports and ask you to chose one.
