@@ -3,10 +3,10 @@ This tool is a modern open source server implementation for supplying nc files o
 
 
 ### Usage:
-On Linux
+On Linux  
 `./serv.py`
 
-On Windows
+On Windows  
 `python2.7 serv.py`
 
 The program will print a list of serial ports and ask you to chose one.
