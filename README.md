@@ -1,13 +1,16 @@
-# ncserver+ - Serial Trumpf NC Program supplier
-This tool is a open source implementation of the ncserver written in python.
+# servenc - Serial Trumpf NC Program supplier
+This tool is a modern open source server implementation for supplying nc files over serial to a CNC-machine control unit. This tool is aimed at Trumpf machines. It is used in production, you may need to adapt the source to work with your control unit, however.
+
 
 ### Usage:
-`./serv.py #linux`
+On Linux
+`./serv.py`
 
-`python2.7 serv.py #windows`
+On Windows
+`python2.7 serv.py`
 
 The program will print a list of serial ports and ask you to chose one.
-After that it will listen on the serial port for file requests from the Trumpf. It tries to open the File in the path specified in the `path` variable (you may change it in the source) and sends it over the serial port to the machine. If it doesn't find the file it will do nothing.
+It will listen on the selected serial port for requests, try to open the File in the path specified by the source (`path` variable) and sends it over the serial port to the control unit. If the file is not found the server will send nothing.
 
 ### Configuration
 * Baud rate: Variable `s_baud` in the source (serv.py)
